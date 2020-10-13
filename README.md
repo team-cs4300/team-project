@@ -9,15 +9,15 @@ Group Collaboration: Groups needs to use a collaboration platform, such as slack
 
 The first task of the group project is to create a fully functional website that is deployed. There will be a project presentation near the end of the semester. The theme of the website should be determined according to the discussions among group members. The website should include group member introductions, in which, each group member should have one page of links to developer personal webpages. 
 
-## This part is 40% of the total group project.
+### This part is 40% of the total group project.
 
 The second task of the group project is to generate a group project report (10 pages), which the W-course student will use this as the attachment of the W-course report. 
 
-## This part is 40% of the total group project. I will perform individual grading. 
+### This part is 40% of the total group project. I will perform individual grading. 
 
 The third task is for the group leader. The group leader needs to submit a report about the grades suggested for each group member. This part is called performance. 
 
-This part is 20% of the total group project.
+### This part is 20% of the total group project.
 
 ## For Task 1:
 
@@ -40,7 +40,7 @@ The report should be around 10 pages in word document with **double space and at
 | Content                   | Pages	    | Task divided	| Parts for Grading |
 | --------------------------|:---------:| -------------:| -----------------:|
 | Cover page	            |  1        | Leader	    |                   |
-| Abstract	                |  1        |   M1          |	                |
+| Abstract	                |  1        |   M1          |	11/19           |
 | Introduction              |  1	    |   M1          |                   |
 | HTML design               |  1	    |   M2          |                   |
 | CSS design                |  1        |	M2          |                   |
