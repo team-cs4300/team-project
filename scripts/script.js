@@ -20,7 +20,7 @@ $(document).ready(function() {
   function searchWeather(searchValue) {
     $.ajax({
       type: "GET",
-      url: "http://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=233dae90d778a247d114e3030437917e&units=imperial",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchValue + "&appid=233dae90d778a247d114e3030437917e&units=imperial",
       dataType: "json",
       success: function(data) {
         // create history link for this search
