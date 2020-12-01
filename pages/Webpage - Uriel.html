@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.17: meta.html -->
+<!-- meta elements provide keywords and a description of a page. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Welcome</title>
+      <style type = "text/css">
+         body  { background-image: url(logo.png);
+                 background-position: bottom right;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+                 background-color: LightGrey; }
+      <!-- <meta> tags provide search engines with -->
+      <!-- information used to catalog a site      -->
+      <meta name = "keywords" content = "web page, design,  
+         HTML5, tutorial, personal, help, index, form, 
+         contact, feedback, list, links, deitel">
+      <meta name = "description" content = "This website will 
+         help you learn the basics of HTML5 and web page design 
+         through the use of interactive examples and 
+         instruction.">
+</style>
+   </head>
+   <body>
+      <h1><p style = "font-size: 30pt; color: green;">Welcome to my Website!</h1>
+	<p>
+         <img src = "myFace.jpg" width = "192" height = "220"
+            alt = "Image of Uriel Torres">        
+	</p>
+
+      <p> My name is <em>Uriel Torres</em> and I am a <strong><em>Computer Science</em></strong> Major at the <strong>University of Houston - Downtown</strong>. I am looking to graduate in the Spring (2021). I am very excited to learn how to create my own website and I am hopeful that my webpage will improve over time as I learn more about using HTML5. CS4300 is one of the last classes I need to graduate and I am thankful to have Professor Zhang since I have taken a class with her in the past and learned so much. Adding HTML5 to my resume will definitely help my resume look better and hopefully future employers will be impressed by the various coding languages I am familiar with in the future. In my spare time I like to produce music, play video games, and work out. Listed below are a few of my favorite websites to visit and I have provided links that will take you directly to these pages.
+This website is technically still under construction but this is a nice base on which I can expand on and add to as the semester goes on.
+
+
+      <p>Have Fun With the Site!</p>
+      <h1><p style = "font-size: 25pt; color: red;">Uriel's most visted sites:</h1>
+      <p><strong>Click on any of the following to visit the page! :)</strong></p>
+
+      <!-- create four text hyperlinks -->
+      <p><a href = "http://www.twitch.com">Twitch</a></p>
+      <p><a href = "http://www.ign.com">IGN</a></p>
+      <p><a href = "http://www.youtube.com">YouTube</a></p>
+      <p><a href = "http://www.google.com">Google</a></p>
+   </body>
+</html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Lists</title>
+   </head>
+
+   <body>
+      <h1><p style = "font-size: 25pt; color: darkblue;">Here's a list of my favorite video games!</h1>
+
+      <!-- create an unordered list -->
+      <ul>
+         <li>
+            Shooters:
+            <ul>
+               <li>Call of Duty: Modern Warfare
+		<ol>
+			<li>PC</li>
+		  </ol>
+	       </li>
+               <li>Apex Legends
+                  <ol>
+                     <li>PLAYSTATION 4</li>
+                     <li>PC</li>
+                  </ol>
+               </li>
+
+               <li>Gears 5</li>
+			<ol>
+			<li>XBOX ONE</li>
+			</ol>
+		</li>
+               <li>Valorant</li>
+			<ol>
+			<li>PC</li>
+			</ol>
+		<li>Halo: Master Chief Collection</li>
+			<ol>
+			<li>XBOX ONE</li>
+			<li>PC</li>
+			</ol>
+
+            </ul> <!-- ends the nested list of line 24 -->
+         </li> 
+
+         <li>Racing:</li>
+<ul>
+               <li> Gran Turismo Sport
+		<ol>
+			<li>PLAYSTATION 4</li>
+		  </ol>
+               <li>Forza Motorsport 7
+		<ol>
+			<li>PC</li>
+		  </ol>
+               <li>Forza Horizon 4
+		<ol>
+			<li>XBOX ONE</li>
+		  </ol>
+</ul> 
+
+         <li>Fighting:</li>
+<ul>
+               <li> Street Fighter V
+		<ol>
+			<li>PLAYSTATION 4</li>
+		  </ol>
+               <li>Killer Instinct
+		<ol>
+			<li>XBOX ONE</li>
+		  </ol>
+               <li>Super Smash Bros: Ultimate
+		<ol>
+			<li>NINTENDO SWITCH</li>
+		  </ol>
+      </ul> <!-- ends the unordered list of line 15 -->
+   </body>
+</html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>More Forms</title>
+   </head>
+
+   <body>
+      <h1><p style = "font-size: 25pt; color: darkorange;">Online Friends List :)</h1>
+      <p>If you are interested in online playing video games with me just submit your online profile info below!
+</p>
+
+      <form method = "post" action = "http://www.deitel.com">
+
+         <input type = "hidden" name = "recipient"
+            value = "deitel@deitel.com">
+         <input type = "hidden" name = "subject" 
+            value = "Feedback Form">
+         <input type = "hidden" name = "redirect" 
+            value = "main.html"> 
+
+         <p><label>Online ID: 
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+ 
+         <!-- <textarea> creates a multiline textbox -->
+         <p><label>Comments:<br>
+            <textarea name = "comments"
+               rows = "4" cols = "36">Example: I like to play:</textarea>
+         </label></p>
+
+         <!-- <input type = "password"> inserts a -->
+         <!-- textbox whose display is masked with -->
+         <!-- asterisk characters -->
+         <p><label>E-mail Address: 
+            <input name = "email" type = "password"  size = "25">
+         </label></p>              
+
+         <p>
+            <strong>Check the consoles that you own below:</strong><br>
+
+            <label>PlayStation 4
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Design"></label>
+            <label>Xbox One
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Links"></label>
+            <label>PC
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Ease"></label> 
+            <label>Nintendo Switch 
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Images"></label>
+            <label>Mobile
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Code"></label>
+         </p>
+
+         <!-- <input type = "radio"> creates a radio -->
+         <!-- button. The difference between radio buttons -->
+         <!-- and checkboxes is that only one radio button -->
+         <!-- in a group can be selected. -->
+         <p>
+            <strong>How often during the week do you play?:</strong><br>
+
+            <label>1 Day
+               <input name = "howtosite" type = "radio"
+                  value = "search engine" checked></label>
+            <label>2-3 Days
+               <input name = "howtosite" type = "radio" 
+                  value = "link"></label> 
+            <label>3-4 Days
+               <input name = "howtosite" type = "radio" 
+                  value = "deitel.com"></label>
+            <label>5-6 Days
+               <input name = "howtosite" type = "radio" 
+                  value = "book"></label>
+            <label>Everyday
+               <input name = "howtosite" type = "radio" 
+                  value = "other"></label>
+         </p>
+
+         <p>
+            <label>Select your average playtime per session: 
+
+                <!-- the <select> tag presents a drop-down -->
+                <!-- list with choices indicated by the -->
+                <!-- <option> tags -->
+               <select name = "rating">
+                  <option selected></option>
+                  <option>10+ Hours :o</option>
+                  <option>9 Hours</option>
+                  <option>8 Hours</option>
+                  <option>7 Hours</option>
+                  <option>6 Hours</option>
+                  <option>5 Hours</option>
+                  <option>4 Hours</option>
+                  <option>3 Hours</option>
+                  <option>2 Hours</option>
+                  <option>1 Hours</option>
+                  <option>Less than 1 Hour</option>
+               </select>
+            </label>
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Animation</title>
+      <style type = "text/css">
+         img
+         {
+            position: relative;
+            -webkit-animation: movingimage linear 10s 1s 2 alternate;
+            -moz-animation: movingimage linear 10s 1s 2 alternate;
+            animation: movingimage linear 10s 1s 2 alternate;
+         }
+         @-webkit-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @-moz-keyframes movingimage 
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+         @keyframes movingimage
+         {
+            0%   {opacity: 0; left: 50px; top: 0px;}
+            25%  {opacity: 1; left: 0px; top: 50px;}
+            50%  {opacity: 0; left: 50px; top: 100px;}
+            75%  {opacity: 1; left: 100px; top: 50px;}
+            100% {opacity: 0; left: 50px; top: 0px;}
+         }
+      </style>
+   </head>
+   <body>
+      <img src = "logo.png" width = "138" height = "180"
+         alt = "HELLO :)">
+      <div></div>
+   </body>
+</html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Media Queries</title>
+      <style type = "text/css">
+      p
+      { margin: 0.9em 0em; }
+      /* styles for smartphones with screen widths 480px or smaller */
+      @media handheld and (max-width: 480px), 
+         screen and (max-device-width: 480px), 
+         screen and (max-width: 480px) 
+      {
+         div {
+            -webkit-column-count: 1; 
+            column-count: 1; }
+      }
+      /* styles for devices with screen widths of 481px to 1024px */
+      @media only screen and (min-width: 481px) and 
+         (max-width: 1024px)
+      {
+         div {
+            -webkit-column-count: 2; 
+            column-count: 2;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      /* styles for devices with screen widths of 1025px or greater */
+      @media only screen and (min-width: 1025px)
+      {
+         div {
+            -webkit-column-count: 3; 
+            column-count: 3;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      </style>
+   </head>
+   <body>
+
+
+</p>
+
+      </div>
+   </body>
+</html>
