@@ -1,0 +1,323 @@
+!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ghana</title>
+   </head>
+
+   <body>
+      <h1>My Personal Webpage</h1>
+      <p><strong>Mawunyo Avegnon.</strong></p>
+<p><img src = " Ghana.gif">
+
+      <!-- create four text hyperlinks -->
+      <p> I’m Mawunyo Avegnon. I am from West Africa Ghana. A Computer Science Student at University of Houston Downtown. Growing up I wanted to become a doctor but changed my mind since I was not passionate about it. Plus, I didn’t want to be in school for that long but thinking about it I would’ve graduated if I pursued that course. I have always been fascinated about how computer works but never thought about going into it until I lost interest in pursuing a degree in Petroleum Engineering.  I Started my degree plan back in 2018 and I’m enjoying it so far. I hope to finish sometime in 2021. Once I’m done, I want to work as a Software Engineer or Cyber Security Analysist.  For now, my country is behind technological advancement compare to the western world. So, it is also my desire to one day take my knowledge and experience back home to help the upcoming generation to think about how to move the country into a digital world that can compete on the global arena. During my downtime, I like to read and watch movies. My hobbies also include working out, playing soccer, riding four wheelers and fixing stuff around the house. </p>
+  <p> This is my favorite website right now:</p>
+      <p><a href = "https://www.youtube.com/">Youtube</a></p>
+   </body>
+</html>
+
+<!-- Nested lists and ordered lists. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Lists</title>
+   </head>
+
+   <body>
+      <h1>I am a Traveler</h1>
+
+      <!-- create an unordered list -->
+      <ul>
+         <li>Traveling for me has given me the opportunity to meet different people I wouldnt have known. It has also broden my understanding of the world.For instance, I have been able to start my own business base on models or types of business I have seen been run in Labanon.</li>
+         <li>
+           Some benifits of taveling according to some research:
+
+            <!-- this starts a nested unordered list, which uses a -->
+            <!-- different bullet. The list ends when you -->
+            <!-- close the <ul> tag. -->
+            <ul>
+               <li>Improves Social and Communication skills</li>
+               <li>Broadens our Understanding of the world
+               <li>Creates a lot of wonderful Memories for Lifetime
+   </body>
+</html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>A simple HTML5 table</title>
+   </head>
+
+   <body>
+      <!-- the <table> tag opens a table -->
+      <table border = "1">
+
+         <!-- the <caption> tag summarizes the table's -->
+         <!-- contents (this helps visually impaired people) -->
+         <caption><strong>Countries I have Visited (1st column) and 
+		    Their Cities I have visted (2nd column)</strong></caption>
+
+         <!-- the <thead> section appears first in the table -->
+         <!-- it formats the table header area -->
+         <thead>
+            <tr> <!-- <tr> inserts a table row -->
+               <th>Country</th> <!-- insert a heading cell -->
+               <th>Cities</th>
+            </tr>
+         </thead>
+
+         <!-- the <tfoot> section appears last in the table -->
+         <!-- it formats the table footer -->
+   
+
+         <!-- all table content is enclosed -->
+         <!-- within the <tbody> -->
+         <tbody>
+            <tr>
+               <td>Germany</td> <!-- insert a data cell -->
+               <td>Stuggart, Franfurt</td>
+            </tr>
+            <tr>
+               <td>Uk</td>
+               <td>London, Leeds,Portsmouth</td>
+            </tr>
+            <tr>
+               <td>Lebanon</td>
+               <td>Beirut</td>
+            </tr>
+            <tr>
+               <td>Nigeria</td>
+               <td>Lagos</td>
+             </tr>
+             <tr>
+               <td>Togo<t/td>
+               <td>Lome<t/td>
+             </tr>
+         </tbody>
+      </table>     
+   </body>
+</html> 
+
+   <head>
+      <meta charset = "utf-8">
+      <title>More Forms</title>
+   </head>
+
+   <body>
+      <h1>Traveler Form</h1>
+      <p>Please fill out this form if you have travel abroad.</p>
+
+      <form method = "post" action = "http://www.deitel.com">
+
+         <input type = "hidden" name = "recipient"
+            value = "deitel@deitel.com">
+         <input type = "hidden" name = "subject" 
+            value = "Feedback Form">
+         <input type = "hidden" name = "redirect" 
+            value = "main.html"> 
+
+         <p><label>Name: 
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+ 
+         <!-- <textarea> creates a multiline textbox -->
+         <p><label>Comments:<br>
+            <textarea name = "comments"
+               rows = "4" cols = "36">Enter comments here.</textarea>
+         </label></p>
+
+         <!-- <input type = "password"> inserts a -->
+         <!-- textbox whose display is masked with -->
+         <!-- asterisk characters -->
+         <p><label>E-mail Address: 
+            <input name = "email" type = "password"  size = "25">
+         </label></p>              
+
+         <p>
+            <strong>Continents you have been to:</strong><br>
+
+            <label>I have been to
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Design"></label>
+            <label>Africa
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Africa"></label>
+            <label>Europe
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Europe"></label> 
+            <label>Asia 
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Asia"></label>
+            <label>Americas
+               <input name = "thingsliked" type = "checkbox" 
+                  value = "Americas"></label>
+         </p>
+
+         <!-- <input type = "radio"> creates a radio -->
+         <!-- button. The difference between radio buttons -->
+         <!-- and checkboxes is that only one radio button -->
+         <!-- in a group can be selected. -->
+         <p>
+            <strong>What did you like about the Countries you have been to?:</strong><br>
+
+            <label>Food
+               <input name = "howtosite" type = "radio"
+                  value = "Food" checked></label>
+            <label>People
+               <input name = "howtosite" type = "radio" 
+                  value = "People"></label> 
+            <label>Tourist Attractions
+               <input name = "howtosite" type = "radio" 
+                  value = "Tourist Attractions"></label>
+            <label>Night Life
+               <input name = "howtosite" type = "radio" 
+                  value = "Night Life"></label>
+            <label>Other
+               <input name = "howtosite" type = "radio" 
+                  value = "other"></label>
+         </p>
+
+         <p>
+            <label>Rate my site: 
+
+                <!-- the <select> tag presents a drop-down -->
+                <!-- list with choices indicated by the -->
+                <!-- <option> tags -->
+               <select name = "rating">
+                  <option selected>Amazing</option>
+                  <option>10</option>
+                  <option>9</option>
+                  <option>8</option>
+                  <option>7</option>
+                  <option>6</option>
+                  <option>5</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                  <option>Awful</option>
+               </select>
+            </label>
+         </p>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>   
+      </form>
+   </body>
+</html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Media Queries</title>
+      <style type = "text/css">
+      p
+      { margin: 0.9em 0em; }
+      /* styles for smartphones with screen widths 480px or smaller */
+      @media handheld and (max-width: 480px), 
+         screen and (max-device-width: 480px), 
+         screen and (max-width: 480px) 
+      {
+         div {
+            -webkit-column-count: 1; 
+            column-count: 1; }
+      }
+      /* styles for devices with screen widths of 481px to 1024px */
+      @media only screen and (min-width: 481px) and 
+         (max-width: 1024px)
+      {
+         div {
+            -webkit-column-count: 2; 
+            column-count: 2;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      /* styles for devices with screen widths of 1025px or greater */
+      @media only screen and (min-width: 1025px)
+      {
+         div {
+            -webkit-column-count: 3; 
+            column-count: 3;
+            -webkit-column-gap: 30px; 
+            column-gap: 30px;
+            -webkit-column-rule: 1px outset black; 
+            column-rule: 1px outset black; }
+      }
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Countries I would Like Visit. Tanzania, Mauritius, Rwanda</h1>
+      </header>
+      <div>
+         <p>Tanzania 
+           Tanzania is an East African country known for its vast wilderness areas. They include the             plains of Serengeti National Park, a safari mecca populated by the “big five” game                        elephant, lion, leopard, buffalo, rhino), and Kilimanjaro National Park, home to Africa’s             highest mountain.</p>
+         <p>Mauritius, 
+            Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs.               The mountainous interior includes Black River Gorges National Park, with rainforests,                waterfalls, hiking trails and wildlife like the flying fox. Capital Port Louis has sites such               as the Champs de Mars horse track, Eureka plantation house and 18th-century Sir                        Seewoosagur Ramgoolam Botanical Gardens.</p>
+         <p>Seychelles
+            The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's             home to numerous beaches, coral reefs and nature reserves, as well as rare animals such             as giant Aldabra tortoises. Mahé, a hub for visiting the other islands, is home to capital                Victoria </p> 
+         <p>Switzerland
+            Switzerland is a mountainous Central European country, home to numerous lakes,                       villages and the high peaks of the Alps. Its cities contain medieval quarters, with                          landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel                        bridge. The country is also known for its ski resorts and hiking trails. Banking and                       finance are key industries, and Swiss watches and chocolate are world renowned.</p>
+         <footer>
+            <em>&copy; 2020 by Mawunyo Avegnon, LLC. 
+               All Rights Reserved.</em>
+         </footer>
+      </div>
+   </body>
+</html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Absolute Positioning</title>
+      <style type = "text/css">
+      .background_image   { position: absolute;
+                 top: 0px;
+                 left: 0px;
+                 z-index: 1; }
+      .foreground_image   { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 2; }
+      .text    { position: absolute;
+                 top: 25px;
+                 left: 100px;
+                 z-index: 3;
+                 font-size: 20pt;
+                 font-family: tahoma, geneva, sans-serif; } 
+      </style>
+   </head>
+   <body>
+    <html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Melting Images</title>
+      <style type = "text/css">
+         #cover 
+         {
+            position: relative;
+            margin: 0 auto;	
+         }
+         #cover img 
+         {
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity 4s ease-in-out;
+            transition: opacity 4s ease-in-out;
+         }
+         #cover img.top:hover 
+            { opacity:0; }
+	   </style> 
+   </head>
+   <body>
+      <div id= "cover">
+         <img class = "bottom" src = "Vegas II.jpg" alt = "Java 9e cover">
+         <img class = "top" src = "Ghana II.jpg" alt = "Java 8e cover">
+      </div>
+   </body>
+</html>
